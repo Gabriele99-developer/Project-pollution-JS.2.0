@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet"> 
+
+  <!--leafletjs-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+
+  <script defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet-src.js"></script>
+
+  <link rel='stylesheet' href="CSS/style.css">
+
+  <title>Monitoraggio qualità dell'aria</title>
+</head>
+<body>
+  <div class="app-container">
+    <div class='header'>
+      <h2>Monitoraggio qualità dell'aria</h2>
+      <h3>Indice qualità dell'aria delle città</h3>
+      
+    </div>
+    <div class="sec">
+        
+        <form class="search-form">
+          <div class="search-bar">
+            <input class="search-input input-text" type="text" name="city" placeholder="Inserire città">
+            <input class="search-input input-submit" type="submit" value="🔍">
+          </div>
+        </form>
+        
+        <div class="aqi-sec">
+          <div class="air-pollution-level">
+            <h3 id="aqi-index"></h3>
+            <p id="aqi-level"></p>
+          </div>
+          <div class="results">
+            <div id="mapid"></div>
+            <div class="result-item health-implications">
+              <p>Health Implications: <span id="health-implications"></span></p>
+            </div>
+            <div class="result-item cautionary-statement">
+              <p>Cautionary Statement (for PM2.5): <span id="cautionary-statement"></span></p>
+            </div>
+          </div>
+
+        </div>
+    </div>
+  </div>
+<script defer type="text/javascript" src="JS/function.js"></script>
+</body>
+</html>

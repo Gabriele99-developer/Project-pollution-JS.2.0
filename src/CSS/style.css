@@ -1,0 +1,138 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  color: #b0c5e7;
+}
+
+/*elements*/
+body{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(../img/9907602.jpg) no-repeat center top; 
+  z-index: -1;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h2{
+  text-shadow: 4px 4px 8px black;
+  font-size: 2.5em;
+  font-weight: 700;
+  color: white;
+}
+
+p{
+  font-size: 1em;
+
+}
+
+h3, h4, h5, h6{
+  text-shadow: 4px 4px 8px black;
+  font-size: 1.75em;
+  line-height: 2em;
+
+}
+
+span{
+  color: white;
+}
+
+/*ids*/
+
+#mapid { 
+  width: 90%;
+  height: 250px; 
+  border: solid 1px;
+  border-radius: 6px;
+  color: white;
+}
+
+#aqi-index{
+  padding-top: 1em;
+  font-weight:bolder;
+  color: white;
+}
+
+#aqi-level{
+  font-size: 1.5em;
+  color: white;
+}
+
+/*classes*/
+.app-container{
+  float: left;
+  margin: auto;
+  max-width: 450px;
+  line-height: 2.5em;
+}
+
+.header{
+  padding-top: 5em;
+}
+
+.sec{
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-form{
+  display: flex;
+  justify-content: space-between; 
+}
+
+.search-bar{
+  padding: 0.2em 1em;
+  font-size: 1.5em;
+  border-radius: 6px;
+  background-color: #1f3f6988;
+}
+
+.search-input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.search-input:focus{
+  border: none;
+}
+
+.input-submit:hover{
+  cursor: pointer;
+}
+
+.aqi-sec{
+  width: 100%;
+}
+
+.air-pollution-level{
+  margin-bottom: 2.5em;
+}
+
+.results{
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+.results p{
+  font-weight: bolder;
+  text-align: start;
+  color: #7feedb;
+}
+
+.result-item{
+  padding: 0.6em;
+}
+
+.footer{
+  background-color: #518ad4;
+}
