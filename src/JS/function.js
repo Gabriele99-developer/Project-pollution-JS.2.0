@@ -89,31 +89,31 @@ renderResJson = function(aqi, city){
     aqiIndex.innerText = `${city}: ⚫ ${aqi} ⚫`;
     aqiLevelMessage.innerText = '☣️ Pericoloso! ☣️';
     heathImplications.innerText = 'Allerta sanitaria: tutti possono avere effetti sulla salute più gravi';
-    cautionaryStatement.innerText = 'Tutti dovrebbero evitare tutti gli sforzi all'aperto';
+    cautionaryStatement.innerText = "Tutti dovrebbero evitare tutti gli sforzi all'aperto";
   } else if (aqi > 200){
     aqiIndex.innerText = `${city}: 🟤 ${aqi} 🟤`;
     aqiLevelMessage.innerText = '⚠️ Molto malsano ⚠️';
-    heathImplications.innerText = 'Avvertenze sanitarie di condizioni di emergenza. L'intera popolazione ha maggiori probabilità di essere colpita.';
-    cautionaryStatement.innerText = 'I bambini e gli adulti attivi e le persone con malattie respiratorie, come l'asma, dovrebbero evitare tutti gli sforzi all'aperto; tutti gli altri, specialmente i bambini, dovrebbero limitare lo sforzo all'aperto.';
+    heathImplications.innerText = "Avvertenze sanitarie di condizioni di emergenza. L'intera popolazione ha maggiori probabilità di essere colpita.";
+    cautionaryStatement.innerText = "I bambini e gli adulti attivi e le persone con malattie respiratorie, come l'asma, dovrebbero evitare tutti gli sforzi all'aperto; tutti gli altri, specialmente i bambini, dovrebbero limitare lo sforzo all'aperto.";
   } else if (aqi > 150){
     aqiIndex.innerText = `${city}: 🔴 ${aqi} 🔴`;
     aqiLevelMessage.innerText = '🏭 Malsano 🏭';
     heathImplications.innerText = 'Tutti possono iniziare a sperimentare effetti sulla salute; i membri di gruppi sensibili possono avere effetti sulla salute più gravi';
-    cautionaryStatement.innerText = 'I bambini e gli adulti attivi e le persone con malattie respiratorie, come l'asma, dovrebbero evitare lo sforzo prolungato all'aperto; tutti gli altri, specialmente i bambini, dovrebbero limitare lo sforzo prolungato all'aperto';
+    cautionaryStatement.innerText = "I bambini e gli adulti attivi e le persone con malattie respiratorie, come l'asma, dovrebbero evitare lo sforzo prolungato all'aperto; tutti gli altri, specialmente i bambini, dovrebbero limitare lo sforzo prolungato all'aperto";
   } else if (aqi > 100){
     aqiIndex.innerText = `${city}: 🟠 ${aqi} 🟠`;
     aqiLevelMessage.innerText = '🌆 Malsano per gruppi sensibili 🌆';
     heathImplications.innerText = 'I membri di gruppi sensibili possono avere effetti sulla salute. È improbabile che il pubblico in generale ne risenta'
-    cautionaryStatement.innerText = 'I bambini e gli adulti attivi e le persone con malattie respiratorie, come l'asma, dovrebbero limitare lo sforzo prolungato all'aperto.';
+    cautionaryStatement.innerText = "I bambini e gli adulti attivi e le persone con malattie respiratorie, come l'asma, dovrebbero limitare lo sforzo prolungato all'aperto.";
   }else if (aqi > 50){
     aqiIndex.innerText = `${city}: 🟡 ${aqi} 🟡`;
     aqiLevelMessage.innerText = '🍃 Moderato 🍃';
-    heathImplications.innerText = 'La qualità dell'aria è accettabile; tuttavia, per alcuni inquinanti può esserci un moderato problema di salute per un numero molto limitato di persone che sono insolitamente sensibili all'inquinamento atmosferico.';
-    cautionaryStatement.innerText = 'I bambini e gli adulti attivi e le persone con malattie respiratorie, come l'asma, dovrebbero limitare lo sforzo prolungato all'aperto.';
+    heathImplications.innerText = "La qualità dell'aria è accettabile; tuttavia, per alcuni inquinanti può esserci un moderato problema di salute per un numero molto limitato di persone che sono insolitamente sensibili all'inquinamento atmosferico.";
+    cautionaryStatement.innerText = "I bambini e gli adulti attivi e le persone con malattie respiratorie, come l'asma, dovrebbero limitare lo sforzo prolungato all'aperto.";
   } else if (aqi > 0){
     aqiIndex.innerText = `${city}: 🟢 ${aqi} 🟢`;
     aqiLevelMessage.innerText = '🍀 Buono 🍀';
-    heathImplications.innerText = 'La qualità dell'aria è considerata soddisfacente e l'inquinamento atmosferico presenta un rischio minimo o nullo';
+    heathImplications.innerText = "La qualità dell'aria è considerata soddisfacente e l'inquinamento atmosferico presenta un rischio minimo o nullo";
     cautionaryStatement.innerText = 'Nessuna';
   } else {
     errorLayout();
